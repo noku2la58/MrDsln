@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MrD.MainPage">
+
+    <StackLayout BackgroundColor="Black">
+        <Frame BackgroundColor="Pink" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Mr D!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label FontSize="16" Padding="30,24,30,0">
+            
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                    </FormattedString.Spans>
+                   
+                </FormattedString>
+               
+            </Label.FormattedText>
+        </Label>
+        <Image Source="JunkFood.jpg" HorizontalOptions="EndAndExpand"></Image>
+
+        <Button x:Name="Tab"
+                Margin="5,30,45,50" Text="Click here to place your order"
+                Command="{Binding openwebcommand}"
+                Background="Yellow"
+                TextColor="Black" Clicked="Tab_Clicked"/>
+
+
+    </StackLayout>
+
+</ContentPage>
